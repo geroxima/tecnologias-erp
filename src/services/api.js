@@ -75,45 +75,6 @@ export const productsAPI = {
   }
 }
 
-// Categories API
-export const categoriesAPI = {
-  getAll: async () => {
-    const response = await api.get(API_CONFIG.ENDPOINTS.CATEGORIES)
-    return response.data
-  }
-}
-
-// Customers API
-export const customersAPI = {
-  getAll: async () => {
-    const response = await api.get(API_CONFIG.ENDPOINTS.CUSTOMERS)
-    return response.data
-  },
-
-  create: async (customerData) => {
-    const response = await api.post(API_CONFIG.ENDPOINTS.CUSTOMERS, customerData)
-    return response.data
-  }
-}
-
-// Orders API
-export const ordersAPI = {
-  getAll: async () => {
-    const response = await api.get(API_CONFIG.ENDPOINTS.ORDERS)
-    return response.data
-  },
-
-  create: async (orderData) => {
-    const response = await api.post(API_CONFIG.ENDPOINTS.ORDERS, orderData)
-    return response.data
-  },
-
-  confirm: async (orderId) => {
-    const response = await api.post(`${API_CONFIG.ENDPOINTS.ORDERS}${orderId}/confirm/`)
-    return response.data
-  }
-}
-
 // Reports API
 export const reportsAPI = {
   getDashboardSummary: async () => {

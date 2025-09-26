@@ -1,4 +1,4 @@
-import { reportsAPI, productsAPI, ordersAPI } from '../services/api.js'
+import { reportsAPI, productsAPI } from '../services/api.js'
 
 export class Dashboard {
   constructor() {
