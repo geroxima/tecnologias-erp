@@ -95,7 +95,7 @@
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-6">
               <div class="flex items-center">
-                <h1 class="text-3xl font-bold text-gray-900">Adán's Mini ERP</h1>
+                <h1 class="text-3xl font-bold text-gray-900">Adán Alvarez's Mini ERP</h1>
               </div>
               <div class="flex items-center space-x-4">
                 <span class="text-sm text-gray-700">Hola, ${n.first_name||n.email}</span>
@@ -244,4 +244,4 @@
         </td>
       </tr>
     `}).join("")}showError(t){const n=document.createElement("div");n.className="fixed top-4 right-4 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded z-50",n.textContent=t,document.body.appendChild(n),setTimeout(()=>{document.body.removeChild(n)},5e3)}logout(){localStorage.removeItem("token"),localStorage.removeItem("user"),window.location.reload()}}class Gn{constructor(){this.app=document.getElementById("app"),this.login=new Kn,this.dashboard=new Xn,this.init()}init(){const t=localStorage.getItem("token"),n=localStorage.getItem("user");if(t&&n)try{const r=JSON.parse(n);this.showDashboard(r)}catch(r){console.error("Error parsing user data:",r),this.showLogin()}else this.showLogin()}showLogin(){this.login.onLoginSuccess=t=>{this.showDashboard(t)},this.login.render(this.app)}showDashboard(t){this.dashboard.render(this.app,t)}}document.addEventListener("DOMContentLoaded",()=>{new Gn});
-//# sourceMappingURL=index-lp0WgP0n.js.map
+//# sourceMappingURL=index-C3sCUfGe.js.map
